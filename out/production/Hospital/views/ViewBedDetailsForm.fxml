@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="324.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewBedDetailsFormController">
+   <children>
+      <TableView fx:id="tbl_Bed_Details" layoutX="32.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="b_Id_col" prefWidth="317.6666793823242" text="Bed ID" />
+          <TableColumn fx:id="r_id_col" prefWidth="374.3333206176758" text="Room ID" />
+            <TableColumn fx:id="b_Charges_col" prefWidth="337.66668701171875" text="Bed Charges" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

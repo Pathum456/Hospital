@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdmitPatientFormController">
+   <children>
+      <AnchorPane fx:id="load_d_v_context" layoutX="27.0" layoutY="307.0" prefHeight="353.0" prefWidth="1103.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="307.0">
+         <children>
+            <TableView fx:id="tbl_View_Admit_Patient" layoutX="75.0" layoutY="113.0" prefHeight="333.0" prefWidth="1084.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="p_id_col" prefWidth="141.0" text="Patient ID" />
+                  <TableColumn fx:id="name_col" prefWidth="195.0" text="Patient Name" />
+                  <TableColumn fx:id="nic_col" prefWidth="183.0" text="Patient NIC" />
+                  <TableColumn fx:id="w_id_col" prefWidth="157.0" text="Ward ID" />
+                  <TableColumn fx:id="r_id_col" prefWidth="137.0" text="Romm Id" />
+                  <TableColumn fx:id="M_Or_F_col" prefWidth="129.33331298828125" text="Male or Female" />
+                  <TableColumn fx:id="a_date_col" prefWidth="186.66668701171875" text="Admit Date" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="75.0" layoutY="14.0" text="Admit Patient" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="-3.0" layoutY="56.0" prefHeight="20.0" prefWidth="70.0" text="Patient Id :" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="p_Id_lbl" alignment="CENTER" layoutX="91.0" layoutY="58.0" prefHeight="17.0" prefWidth="105.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="91.0" />
+      <JFXTextField fx:id="search_Nic_txt" layoutX="10.0" layoutY="106.0" onKeyReleased="#search_Patient_On_Key_Reliease" prefHeight="25.0" prefWidth="282.0" promptText="Patient NIC :" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="108.0" />
+      <JFXTextField fx:id="set_Name_txt" layoutX="10.0" layoutY="141.0" prefHeight="25.0" prefWidth="283.0" promptText="Patient Name :" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="107.0" />
+      <JFXButton buttonType="RAISED" layoutX="938.0" layoutY="257.0" onAction="#admit_Patient_Btn" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #2563EB; -fx-border-color: green;" text="Admit" AnchorPane.bottomAnchor="396.0" AnchorPane.rightAnchor="107.0" />
+      <JFXButton buttonType="RAISED" layoutX="808.0" layoutY="257.0" onAction="#disCharge_Patient_Btn" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #2563EB; -fx-border-color: green;" text="Discharge" AnchorPane.bottomAnchor="396.0" AnchorPane.rightAnchor="237.0" />
+      <Label alignment="TOP_RIGHT" layoutX="251.0" layoutY="57.0" prefHeight="20.0" prefWidth="48.0" text="Date :">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_RIGHT" layoutX="486.0" layoutY="56.0" prefHeight="20.0" prefWidth="48.0" text="Time :">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_lbl" alignment="CENTER" layoutX="315.0" layoutY="59.0" prefHeight="17.0" prefWidth="105.0" style="-fx-background-color: white;" />
+      <Label fx:id="time_lbl" alignment="CENTER" layoutX="551.0" layoutY="58.0" prefHeight="17.0" prefWidth="105.0" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="ward_Id_cmb" layoutX="14.0" layoutY="191.0" prefHeight="25.0" prefWidth="199.0" promptText="Ward_Id" AnchorPane.leftAnchor="10.0" />
+      <JFXComboBox fx:id="room_Id_cmb" layoutX="287.0" layoutY="191.0" prefHeight="25.0" prefWidth="221.0" promptText="Room Id :" AnchorPane.leftAnchor="257.0" AnchorPane.topAnchor="191.0" />
+      <JFXComboBox fx:id="M_Or_F_cmb" layoutX="822.0" layoutY="191.0" prefHeight="25.0" prefWidth="221.0" promptText="Select Gender :" AnchorPane.topAnchor="191.0">
+          
+      </JFXComboBox>
+      <JFXToggleButton fx:id="toggle_Btn" layoutX="27.0" layoutY="249.0" onAction="#view_Discharge_patient_On_action" prefHeight="58.0" prefWidth="206.0" text="View Discharge Patient">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXToggleButton>
+      <JFXComboBox fx:id="bed_Id_cmb" layoutX="556.0" layoutY="191.0" prefHeight="25.0" prefWidth="221.0" promptText="Bed Id" AnchorPane.leftAnchor="536.0" AnchorPane.topAnchor="191.0" />
+
+   </children>
+</AnchorPane>

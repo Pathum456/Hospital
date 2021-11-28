@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="324.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewWardDetailsFormController">
+   <children>
+      <TableView fx:id="ward_tbl" layoutX="20.0" layoutY="70.0" prefHeight="324.0" prefWidth="1030.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="w_Id_col" prefWidth="259.66668701171875" text="W_Id" />
+            <TableColumn fx:id="w_Name_col" prefWidth="299.0" text="W_Name" />
+            <TableColumn fx:id="w_D_col" prefWidth="310.0" text="W_Doctor In Charge" />
+            <TableColumn fx:id="r_Qty_col" prefWidth="160.66665649414062" text="W_Room_Qty" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

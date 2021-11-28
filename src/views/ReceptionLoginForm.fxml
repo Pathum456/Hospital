@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="reception_Login_Context" prefHeight="329.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionLoginFormController">
+   <children>
+      <ImageView fitHeight="135.0" fitWidth="150.0" layoutX="75.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../essarts/receptionist-silhouette-2.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="22.0" layoutY="175.0" prefHeight="150.0" prefWidth="280.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="User Name" />
+            <JFXTextField fx:id="lbl_Reception_User_Name" layoutX="109.0" layoutY="10.0" />
+            <Label layoutX="14.0" layoutY="52.0" text="User Password" />
+            <JFXPasswordField fx:id="reception_Password_field" layoutX="109.0" layoutY="48.0" />
+            <JFXButton buttonType="RAISED" layoutX="177.0" layoutY="111.0" onAction="#reception_Login_Btn_On_Action" text="login" />
+            <JFXButton buttonType="RAISED" layoutX="88.0" layoutY="111.0" onAction="#back_From_Reception_On_Action" text="Cancel" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="58.0" layoutY="16.0" text="Reception" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

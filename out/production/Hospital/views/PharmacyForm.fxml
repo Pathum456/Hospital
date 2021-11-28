@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="705.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PharmacyFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="412.0" layoutY="27.0" prefHeight="30.0" prefWidth="997.0" text="Manage Pharmacy" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="89.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: lightgray;" text="Pharmacy Id :" AnchorPane.topAnchor="89.0" />
+      <JFXTextField fx:id="search_Id_Txt" alignment="CENTER" layoutX="523.0" layoutY="89.0" onKeyReleased="#search_Pharmacy_On_Key_Released" prefHeight="30.0" prefWidth="181.0" promptText="Search Id :" AnchorPane.topAnchor="89.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="ph_Id_lbl" alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="88.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: lightgray;" AnchorPane.topAnchor="89.0" />
+      <AnchorPane layoutX="50.0" layoutY="146.0" prefHeight="34.0" prefWidth="705.0">
+         <children>
+            <JFXTextField fx:id="name_Txt" alignment="BOTTOM_LEFT" layoutX="-4.0" layoutY="17.0" prefHeight="34.0" prefWidth="709.0" promptText="Pharmacy Name :" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="211.0" prefHeight="34.0" prefWidth="705.0">
+         <children>
+            <JFXTextField fx:id="contact_txt" alignment="BOTTOM_LEFT" prefHeight="34.0" prefWidth="705.0" promptText="Contact Number :" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="271.0" prefHeight="34.0" prefWidth="705.0">
+         <children>
+            <JFXTextField fx:id="address_Txt" alignment="BOTTOM_LEFT" prefHeight="34.0" prefWidth="705.0" promptText="Address :" text="Address :" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="view_Pharmacy_Tbl" layoutX="59.0" layoutY="299.0" prefHeight="308.0" prefWidth="957.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="377.0">
+         <columns>
+            <TableColumn fx:id="ph_Id_col" minWidth="0.0" prefWidth="247.0" text="PH Id" />
+            <TableColumn fx:id="name_col" prefWidth="280.0" text="Pharmacy Name" />
+            <TableColumn fx:id="contact_col" minWidth="0.0" prefWidth="222.6666259765625" text="Conact Number" />
+            <TableColumn fx:id="address_Col" minWidth="0.0" prefWidth="207.3333740234375" text="Address" />
+         </columns>
+      </TableView>
+      <JFXButton alignment="CENTER" layoutX="873.0" layoutY="297.0" onAction="#add_Pharmacy_oN_Action" prefHeight="25.0" prefWidth="106.0" style="-fx-border-color: black; -fx-background-color: white;" text="Add Pharmacy" AnchorPane.topAnchor="325.0" />
+      <JFXButton alignment="CENTER" layoutX="723.0" layoutY="319.0" onAction="#delete_Pharmacy_On_Action" prefHeight="27.0" prefWidth="122.0" style="-fx-border-color: black; -fx-background-color: white;" text="Delete Pharmacy" AnchorPane.topAnchor="325.0" />
+   </children>
+</AnchorPane>

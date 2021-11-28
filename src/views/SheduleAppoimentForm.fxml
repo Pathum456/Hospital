@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SheduleAppoimentFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="149.0" layoutY="23.0" text="Make Appoiment" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="P_NIC_txt" layoutX="21.0" layoutY="107.0" onKeyReleased="#search_Patient_On_Key_Reliease" prefHeight="25.0" prefWidth="1073.0" promptText="Patient NIC :" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="67.0" />
+      <Label layoutX="21.0" layoutY="62.0" text="Patient ID:" AnchorPane.leftAnchor="10.0" />
+      <Label fx:id="P_Id_lbl" layoutX="74.0" layoutY="54.0" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="74.0" />
+      <TextField fx:id="P_Name_txt" layoutX="20.0" layoutY="150.0" prefHeight="25.0" prefWidth="1073.0" promptText="Patient Name :" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="67.0" />
+      <TextField fx:id="P_Contact_txt" layoutX="20.0" layoutY="195.0" prefHeight="25.0" prefWidth="1073.0" promptText="Patient Contact No :" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="67.0" />
+      <JFXButton fx:id="set_Appointment_Btn" buttonType="RAISED" layoutX="950.0" layoutY="291.0" onAction="#set_appoiment_Btn_On_Action" style="-fx-background-color: #2563EB #2563EB;" text="Set Appoiment" AnchorPane.bottomAnchor="364.0" AnchorPane.rightAnchor="104.0" />
+      <ComboBox fx:id="d_ID_cmb" layoutX="10.0" layoutY="270.0" prefWidth="150.0" promptText="Doctor ID :" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="270.0" />
+      <Label layoutX="199.0" layoutY="274.0" text="Doctor Name :" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="274.0" />
+      <Label fx:id="d_Name_lbl" alignment="CENTER" layoutX="288.0" layoutY="270.0" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: white;" AnchorPane.topAnchor="270.0" />
+      <TextField fx:id="P_Reason_txt" layoutX="20.0" layoutY="232.0" prefHeight="25.0" prefWidth="1073.0" promptText="Reason :" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="67.0" />
+      <Label fx:id="d_Date_Lbl" layoutX="192.0" layoutY="58.0" prefHeight="17.0" prefWidth="133.0" AnchorPane.leftAnchor="192.0" />
+      <Label fx:id="d_Time_Lbl" layoutX="358.0" layoutY="58.0" prefHeight="17.0" prefWidth="150.0" AnchorPane.leftAnchor="358.0" />
+      <TableView fx:id="appointment_View_tbl" layoutX="20.0" layoutY="375.0" prefHeight="313.0" prefWidth="1110.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <columns>
+          <TableColumn fx:id="p_ID_col" prefWidth="112.0" text="P_ID" />
+          <TableColumn fx:id="p_Name_col" prefWidth="143.0" text="Patient Name" />
+            <TableColumn fx:id="contact_col" prefWidth="142.0" text="Contact Nomber" />
+            <TableColumn fx:id="reason_col" prefWidth="194.0" text="Reson" />
+            <TableColumn fx:id="d_Id_col" prefWidth="109.0" text="D_ID" />
+            <TableColumn fx:id="d_Name_col" prefWidth="141.0" text="Doctor Name" />
+            <TableColumn fx:id="date_col" prefWidth="145.0" text="Date" />
+            <TableColumn fx:id="time_Col" prefWidth="123.0" text="Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

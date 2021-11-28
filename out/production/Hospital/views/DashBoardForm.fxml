@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="755.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <StackPane prefHeight="392.0" prefWidth="637.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="814.0" fitWidth="1560.0" layoutX="-116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../essarts/hospital-management-system-post-cover-image.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="392.0" prefWidth="637.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="244.0" layoutY="27.0" prefHeight="141.0" prefWidth="643.0" text="NEW LIFE">
+               <font>
+                  <Font name="Book Antiqua" size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="1180.0" layoutY="724.0" prefHeight="53.0" prefWidth="264.0" style="-fx-background-color: white;" />
+            <JFXButton alignment="BOTTOM_CENTER" layoutX="-20.0" layoutY="8.0" onAction="#continue_on_Action" prefHeight="812.0" prefWidth="1444.0" text="Tap To Continue" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="705.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageWardFormController">
+   <children>
+      <AnchorPane fx:id="table_Load_Context" layoutX="92.0" layoutY="82.0" prefHeight="323.0" prefWidth="977.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <TableView fx:id="ward_tbl" prefHeight="324.0" prefWidth="1030.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="w_Id_col" prefWidth="213.0" text="W_Id" />
+                  <TableColumn fx:id="w_Name_col" prefWidth="257.0" text="W_Name" />
+                  <TableColumn fx:id="w_D_col" prefWidth="274.0" text="W_Doctor In Charge" />
+                  <TableColumn fx:id="r_Qty_col" prefWidth="230.0" text="W_Room_Qty" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Box depth="100" drawMode="LINE" height="200.0" layoutX="170.0" layoutY="182.0" width="280.0" AnchorPane.leftAnchor="10.0" />
+      <JFXTextField fx:id="w_Name_Txt" layoutX="40.0" layoutY="139.0" prefHeight="27.0" prefWidth="260.0" promptText="Ward Name :" style="-fx-border-color: black;" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="w_D_In_Charge_Txt" layoutX="40.0" layoutY="189.0" prefHeight="25.0" prefWidth="260.0" promptText="Doctor In Charge" style="-fx-border-color: black;" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="w_Room_Qty_Txt" layoutX="40.0" layoutY="239.0" prefHeight="25.0" prefWidth="260.0" promptText="Room QTY :" style="-fx-border-color: black;" AnchorPane.leftAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Box depth="100" drawMode="LINE" height="200.0" layoutX="530.0" layoutY="182.0" width="280.0" AnchorPane.leftAnchor="390.0" />
+      <JFXTextField fx:id="w_Id_Txt" layoutX="405.0" layoutY="159.0" prefHeight="25.0" prefWidth="253.0" promptText="Ward ID :" style="-fx-border-color: black;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="r_Charge_Txt" layoutX="404.0" layoutY="229.0" prefHeight="25.0" prefWidth="254.0" promptText="Room Charge :" style="-fx-border-color: black;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <Box depth="100" drawMode="LINE" height="200.0" layoutX="827.0" layoutY="182.0" width="280.0" AnchorPane.rightAnchor="10.0" />
+      <JFXTextField fx:id="r_ID_Txt" layoutX="695.0" layoutY="159.0" prefHeight="25.0" prefWidth="262.0" promptText="Room Id" style="-fx-border-color: black;" AnchorPane.rightAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="b_Charges_Txt" layoutX="695.0" layoutY="229.0" prefHeight="25.0" prefWidth="262.0" promptText="Bed Charges :" style="-fx-border-color: black;" AnchorPane.rightAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="10.0" layoutY="333.0" onAction="#view_Ward_Details_on_Action" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="View Ward Details" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="333.0" />
+      <JFXButton layoutX="390.0" layoutY="333.0" onAction="#view_Room_Details_On_Action" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="View Room Details " AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="333.0" />
+      <JFXButton layoutX="708.0" layoutY="333.0" onAction="#view_Bed_On_Action" prefHeight="36.0" prefWidth="280.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="View Bed Details" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="333.0" />
+      <Label alignment="CENTER" layoutX="95.0" layoutY="34.0" prefHeight="31.0" prefWidth="315.0" text="Manage Ward" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="93.0" text="Ward Id :" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="93.0" />
+      <Label fx:id="w_Id_lbl" layoutX="91.0" layoutY="93.0" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: lightGray;" AnchorPane.topAnchor="93.0" />
+      <Label layoutX="413.0" layoutY="93.0" text="Room ID :" AnchorPane.topAnchor="93.0" />
+      <Label fx:id="r_Id_lbl" layoutX="484.0" layoutY="93.0" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: lightGray;" AnchorPane.topAnchor="93.0" />
+      <Label layoutX="728.0" layoutY="93.0" text="Bed ID :" AnchorPane.topAnchor="93.0" />
+      <Label fx:id="b_Id_lbl" layoutX="799.0" layoutY="93.0" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: lightGray;" AnchorPane.topAnchor="93.0" />
+      <JFXTextField fx:id="ward_Id_Txt" layoutX="14.0" layoutY="51.0" onKeyReleased="#search_Ward_On_key_Reliesed" promptText="Search Ward Id :" AnchorPane.topAnchor="50.0" />
+      <JFXTextField fx:id="room_Id_Txt" layoutX="390.0" layoutY="51.0" onKeyReleased="#search_Room_On_key_Reliesed" promptText="Search Room Id :" AnchorPane.topAnchor="50.0" />
+      <JFXTextField fx:id="bed_Id_txt" layoutX="708.0" layoutY="51.0" onKeyReleased="#search_Bed_On_key_Reliesed" promptText="Search Bed Id :" AnchorPane.topAnchor="50.0" />
+      <JFXButton fx:id="add_Ward_btn" layoutX="10.0" layoutY="285.0" onAction="#add_Ward_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="Add Ward " AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="285.0" />
+      <JFXButton fx:id="add_Room_btn" layoutX="390.0" layoutY="285.0" onAction="#add_Room_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="Add Room" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="285.0" />
+      <JFXButton fx:id="add_Bed_btn" layoutX="708.0" layoutY="285.0" onAction="#add_Bed_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="Add bed" AnchorPane.leftAnchor="708.0" AnchorPane.topAnchor="285.0" />
+      <JFXButton fx:id="delete_Ward_btn" layoutX="173.0" layoutY="285.0" onAction="#delete_ward_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="Delete Ward " AnchorPane.topAnchor="285.0" />
+      <JFXButton fx:id="delete_Room_btn" layoutX="553.0" layoutY="285.0" onAction="#delete_Room_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="Delete Room" AnchorPane.topAnchor="285.0" />
+      <JFXButton fx:id="delete_Bed_btn" layoutX="870.0" layoutY="285.0" onAction="#delete_Bed_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="Delete bed" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="285.0" />
+   </children>
+</AnchorPane>

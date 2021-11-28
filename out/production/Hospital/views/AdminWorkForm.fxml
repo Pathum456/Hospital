@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="745.0" prefWidth="1352.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminWorkFormController">
+    <children>
+        <AnchorPane layoutY="55.0" prefHeight="705.0" prefWidth="255.0" style="-fx-background-color: #FBBF24;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <children>
+            <AnchorPane layoutX="41.0" layoutY="67.0" prefHeight="35.0" prefWidth="146.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <children>
+                      <JFXButton fx:id="pharmacyBtn" onAction="#pharmacy_On_Action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="Manage  Pharmacy" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="77.0" prefHeight="35.0" prefWidth="255.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+               <children>
+                      <JFXButton fx:id="doctorBtn" onAction="#Doctor_On_Action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="Manage Doctor" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="2.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../essarts/icons8-doctor-male-48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="168.0" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+               <children>
+                      <JFXButton fx:id="appointmentBtn" onAction="#appointmnet_On_Action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="Manage Appoiment" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="21.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../essarts/icons8-man-raising-hand-icon-50.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="234.0" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="270.0">
+               <children>
+                      <JFXButton fx:id="wardBtn" onAction="#ward_On_Action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="Manage Ward" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="36.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../essarts/icons8-hospital-bed-48.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="269.0" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="340.0">
+               <children>
+                      <JFXButton fx:id="patientBtn" onAction="#patient_Report_On_action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="Patient Reports" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="35.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../essarts/icons8-calendar.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="335.0" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="410.0">
+               <children>
+                      <JFXButton fx:id="systemBtn" onAction="#system_Reports_On_Action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="System Reports" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="40.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../essarts/icons8-medical-history-30.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="419.0" prefHeight="35.0" prefWidth="148.0" style="-fx-background-color: skyBlue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="480.0">
+               <children>
+                      <JFXButton fx:id="loginBtn" onAction="#login_Details_On_Action" prefHeight="35.0" prefWidth="148.0" style="-fx-border-color: black;" text="Login Details" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <ImageView fitHeight="40.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../essarts/icons8-signin-50.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="load_context" layoutX="255.0" layoutY="45.0" prefHeight="705.0" prefWidth="1077.0" style="-fx-background-color: #34D399;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <children>
+                <Label alignment="CENTER" layoutX="402.0" layoutY="17.0" prefHeight="30.0" prefWidth="997.0" text="Manage Pharmacy" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+                    <font>
+                        <Font name="Book Antiqua Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="view_Pharmacy_Tbl" layoutX="49.0" layoutY="289.0" prefHeight="308.0" prefWidth="957.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="377.0">
+                    <columns>
+                        <TableColumn fx:id="ph_Id_col" minWidth="0.0" prefWidth="247.0" text="PH Id" />
+                        <TableColumn fx:id="name_col" prefWidth="280.0" text="Pharmacy Name" />
+                        <TableColumn fx:id="contact_col" minWidth="0.0" prefWidth="222.6666259765625" text="Conact Number" />
+                        <TableColumn fx:id="address_Col" minWidth="0.0" prefWidth="207.3333740234375" text="Address" />
+                    </columns>
+                </TableView>
+                <JFXButton alignment="CENTER" layoutX="937.0" layoutY="325.0" onAction="#add_Pharmacy_oN_Action" prefHeight="25.0" prefWidth="106.0" style="-fx-border-color: black; -fx-background-color: skyblue;" text="Save" AnchorPane.topAnchor="325.0" />
+                <JFXButton alignment="CENTER" layoutX="777.0" layoutY="325.0" onAction="#delete_Pharmacy_On_Action" prefHeight="27.0" prefWidth="122.0" style="-fx-border-color: black; -fx-background-color: skyblue;" text="Delete" AnchorPane.leftAnchor="777.0" AnchorPane.topAnchor="325.0" />
+                <AnchorPane layoutX="40.0" layoutY="136.0" prefHeight="34.0" prefWidth="1000.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="135.0">
+                    <children>
+                        <JFXTextField fx:id="name_Txt" alignment="BOTTOM_LEFT" layoutX="-4.0" layoutY="17.0" prefHeight="34.0" prefWidth="709.0" promptText="Pharmacy Name :" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="Lucida Sans Unicode" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </JFXTextField>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="40.0" layoutY="201.0" prefHeight="34.0" prefWidth="1000.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="200.0">
+                    <children>
+                        <JFXTextField fx:id="contact_txt" alignment="BOTTOM_LEFT" prefHeight="34.0" prefWidth="705.0" promptText="Contact Number :" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="Lucida Sans Unicode" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </JFXTextField>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="40.0" layoutY="261.0" prefHeight="34.0" prefWidth="1000.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="265.0">
+                    <children>
+                        <JFXTextField fx:id="address_Txt" alignment="BOTTOM_LEFT" prefHeight="34.0" prefWidth="707.0" promptText="Address :" text="Address :" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="Lucida Sans Unicode" size="14.0" />
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="TEXT" />
+                            </cursor>
+                        </JFXTextField>
+                    </children>
+                </AnchorPane>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="79.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: lightgray;" text="Pharmacy Id :" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="79.0" />
+                <JFXTextField fx:id="search_Id_Txt" alignment="CENTER" layoutX="513.0" layoutY="79.0" onKeyReleased="#search_Pharmacy_On_Key_Released" prefHeight="30.0" prefWidth="181.0" promptText="Search Id :" AnchorPane.leftAnchor="513.0" AnchorPane.topAnchor="79.0">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </JFXTextField>
+                <Label fx:id="ph_Id_lbl" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="78.0" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: lightgray;" AnchorPane.leftAnchor="164.0" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #14B8A6;" AnchorPane.bottomAnchor="705.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="315.0" layoutY="4.0" prefHeight="24.0" prefWidth="35.0" text="Date :" AnchorPane.leftAnchor="315.0" AnchorPane.topAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+                <Label fx:id="date_lbl" layoutX="388.0" layoutY="12.0" prefHeight="24.0" prefWidth="100.0" AnchorPane.leftAnchor="388.0" AnchorPane.topAnchor="4.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="540.0" layoutY="9.0" prefHeight="24.0" prefWidth="35.0" text="Time :" AnchorPane.leftAnchor="540.0" AnchorPane.topAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+                <Label fx:id="time_lbl" layoutX="600.0" layoutY="-1.0" prefHeight="24.0" prefWidth="100.0" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="4.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Label layoutX="70.0" layoutY="12.0" prefHeight="24.0" prefWidth="100.0" text="Nice Day To You :" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="4.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

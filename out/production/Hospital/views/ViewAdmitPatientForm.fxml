@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="353.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewAdmitPatientFormController">
+   <children>
+      <TableView fx:id="tbl_View_Admit_Patient" layoutX="20.0" layoutY="10.0" prefHeight="333.0" prefWidth="1084.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="p_id_col" prefWidth="141.0" text="Patient ID" />
+            <TableColumn fx:id="name_col" prefWidth="195.0" text="Patient Name" />
+            <TableColumn fx:id="nic_col" prefWidth="183.0" text="Patient NIC" />
+            <TableColumn fx:id="w_id_col" prefWidth="157.0" text="Ward ID" />
+            <TableColumn fx:id="r_id_col" prefWidth="137.0" text="Romm Id" />
+            <TableColumn fx:id="M_Or_F_col" prefWidth="114.0" text="Male or Female" />
+            <TableColumn fx:id="a_date_col" prefWidth="174.0" text="Admit Date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

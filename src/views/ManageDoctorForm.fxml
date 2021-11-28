@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="705.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageDoctorFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="135.0" layoutY="41.0" text="Manage Doctor" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Book Antiqua" size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="search_d_ID_cmb" layoutX="443.0" layoutY="74.0" promptText="Search Doctor Id :" AnchorPane.topAnchor="75.0" />
+      <JFXTextField fx:id="d_Name_Txt" layoutX="20.0" layoutY="136.0" prefHeight="25.0" prefWidth="445.0" promptText="Doctor Name :" AnchorPane.topAnchor="136.0" />
+      <JFXTextField fx:id="d_Contact_txt" layoutX="20.0" layoutY="183.0" prefHeight="25.0" prefWidth="445.0" promptText="Doctor Contact :" AnchorPane.leftAnchor="20.0" />
+      <JFXTextField fx:id="salary_txt" layoutX="102.0" layoutY="238.0" prefHeight="25.0" prefWidth="445.0" promptText="Salary" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="533.0" />
+      <JFXTextField fx:id="days_txt" layoutX="524.0" layoutY="142.0" prefHeight="25.0" prefWidth="463.0" promptText="Days :" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="136.0" />
+      <Label layoutX="33.0" layoutY="62.0" text="Doctor ID ;" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="d_ID_TXt" layoutX="152.0" layoutY="65.0" prefHeight="19.0" prefWidth="85.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="view_Doctor_tbl" layoutX="20.0" layoutY="339.0" prefHeight="341.0" prefWidth="977.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="339.0">
+         <columns>
+            <TableColumn fx:id="d_ID_Col" prefWidth="125.33332824707031" text="D_Id" />
+            <TableColumn fx:id="d_name_Col" prefWidth="182.33334350585938" text="D_Name" />
+            <TableColumn fx:id="d_Contact_col" prefWidth="191.0" text="D_Contact" />
+            <TableColumn fx:id="d_Salary_col" minWidth="0.0" prefWidth="145.0" text="Salary" />
+            <TableColumn fx:id="d_Days_col" minWidth="0.0" prefWidth="169.3333740234375" text="Available Days" />
+            <TableColumn fx:id="d_Time_Col" minWidth="0.0" prefWidth="160.33331298828125" text="Available Time" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="delete_context" layoutX="143.0" layoutY="61.0" prefHeight="23.0" prefWidth="53.0" AnchorPane.leftAnchor="851.0" AnchorPane.topAnchor="297.0">
+         <children>
+            <JFXButton fx:id="delete_Btn" onAction="#delete_Doctor_on_Action" text="Delete" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="add_context" layoutX="915.0" layoutY="254.0" prefHeight="23.0" prefWidth="55.0" AnchorPane.leftAnchor="915.0" AnchorPane.topAnchor="297.0">
+         <children>
+            <JFXButton fx:id="add_Btn" onAction="#save_doctor_on_Action" text="Add" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="time_txt" layoutX="534.0" layoutY="196.0" prefHeight="25.0" prefWidth="463.0" promptText="Days :" />
+   </children>
+</AnchorPane>

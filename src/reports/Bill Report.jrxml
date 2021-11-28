@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Bill Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cb490acf-aaf7-4d5a-8409-6d58ca4ce80e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Hospital"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from bill ;]]>
+	</queryString>
+	<field name="B_Id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="B_Id"/>
+		<property name="com.jaspersoft.studio.field.label" value="B_Id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="P_Id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="P_Id"/>
+		<property name="com.jaspersoft.studio.field.label" value="P_Id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="P_Name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="P_Name"/>
+		<property name="com.jaspersoft.studio.field.label" value="P_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="W_Id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="W_Id"/>
+		<property name="com.jaspersoft.studio.field.label" value="W_Id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="R_Id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="R_Id"/>
+		<property name="com.jaspersoft.studio.field.label" value="R_Id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bed_ID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Bed_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="Bed_ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Description"/>
+		<property name="com.jaspersoft.studio.field.label" value="Description"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="D_Charge" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="D_Charge"/>
+		<property name="com.jaspersoft.studio.field.label" value="D_Charge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Room_Charge" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Room_Charge"/>
+		<property name="com.jaspersoft.studio.field.label" value="Room_Charge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bed_Charge" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Bed_Charge"/>
+		<property name="com.jaspersoft.studio.field.label" value="Bed_Charge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Medicine_Charge" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Medicine_Charge"/>
+		<property name="com.jaspersoft.studio.field.label" value="Medicine_Charge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Extra_Charges" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Extra_Charges"/>
+		<property name="com.jaspersoft.studio.field.label" value="Extra_Charges"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Amount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.label" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bill"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="Amount1" class="java.lang.Integer" resetType="Page" calculation="Count">
+		<variableExpression><![CDATA[$F{Amount}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-13" width="555" height="42" uuid="ee18088c-f7ae-4049-8ab9-8426df2f0281"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="33"/>
+				</textElement>
+				<text><![CDATA[New Life Hospital]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-44" width="555" height="30" uuid="d225c611-4c6b-47ea-ab33-229735c66bb9"/>
+				<textElement textAlignment="Center">
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Patient BIll]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="55" height="30" uuid="66c31a13-4b5e-4b8a-a944-129613c6b378">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="168da232-1d2a-436f-88e4-01b3a4a4431a"/>
+				</reportElement>
+				<text><![CDATA[B_Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="0" width="50" height="30" uuid="40bd1f6f-666f-4502-80be-fa730dc6b736">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf866f7e-d229-43c2-816c-91c49e7b5739"/>
+				</reportElement>
+				<text><![CDATA[P_Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="105" y="0" width="50" height="30" uuid="2a8ccb58-d741-4106-add4-ca3204b58bf3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39992c1b-f07b-45f6-8a31-7ae08ec3a935"/>
+				</reportElement>
+				<text><![CDATA[P_Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="0" width="50" height="30" uuid="272afc6b-c68f-4e60-8a3e-92c999bd7449">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09883376-f0d7-49d9-8798-6a6d29c1b5aa"/>
+				</reportElement>
+				<text><![CDATA[Bed_ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="205" y="0" width="50" height="30" uuid="8506a2ad-1dde-4d3b-86a8-e5f8a43a064c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f1d2419f-5666-4679-88be-c256d95c498a"/>
+				</reportElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="0" width="50" height="30" uuid="17ea79bd-dbe2-4585-8eb0-f1582ca99f6e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b942953c-1052-4ef5-ab40-d5515c293d81"/>
+				</reportElement>
+				<text><![CDATA[D_Charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="305" y="0" width="50" height="30" uuid="5a9edd69-6a75-42d3-8266-8dafc503a296">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d402c62a-6e3e-4ff9-83ce-a62ed4518491"/>
+				</reportElement>
+				<text><![CDATA[Room_Charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="355" y="0" width="50" height="30" uuid="3f17dbb4-c0ac-477a-9ddf-fbeedb7f2b15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b99d82b6-7c6a-4f27-95d2-7fb04a8aab1c"/>
+				</reportElement>
+				<text><![CDATA[Bed_Charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="0" width="50" height="30" uuid="8b4761ec-ee70-40e5-b8ab-8b264e1075a0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe7bfb5a-1151-4fe4-a769-01c4686c5b10"/>
+				</reportElement>
+				<text><![CDATA[Medicine_Charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="50" height="30" uuid="58739a9b-7507-4a2c-b0ba-29e9db8aa636">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8c9697e7-8223-4b52-a7dc-8eecf60c1152"/>
+				</reportElement>
+				<text><![CDATA[Extra_Charges]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="505" y="0" width="50" height="30" uuid="894549e0-cfa7-4a73-99d0-30f1fc992406">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e6257b33-b77c-4ce5-891e-afe99e867db8"/>
+				</reportElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="30" uuid="dafeca68-e101-4e6d-b8a7-c43d1251a266">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="168da232-1d2a-436f-88e4-01b3a4a4431a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{B_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="50" height="30" uuid="956039ba-13a9-4371-aac0-de94dcdba80a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf866f7e-d229-43c2-816c-91c49e7b5739"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{P_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="105" y="0" width="50" height="30" uuid="bdea423a-74f6-43e7-812f-d0e07600b230">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39992c1b-f07b-45f6-8a31-7ae08ec3a935"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{P_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="0" width="50" height="30" uuid="54a688ff-8cd5-452e-86ca-90dd5a44677a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09883376-f0d7-49d9-8798-6a6d29c1b5aa"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Bed_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="0" width="50" height="30" uuid="51465e5f-fee2-41b5-9927-b2f9157d1633">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f1d2419f-5666-4679-88be-c256d95c498a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="0" width="50" height="30" uuid="9cb663d0-ef20-4aef-8bf8-67035bab3c7b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b942953c-1052-4ef5-ab40-d5515c293d81"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{D_Charge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="305" y="0" width="50" height="30" uuid="25fa700c-18bb-4d97-abdf-0ce43c485c44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d402c62a-6e3e-4ff9-83ce-a62ed4518491"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Room_Charge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="355" y="0" width="50" height="30" uuid="9a33b2cd-7a8b-47df-aac9-e27793d41536">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b99d82b6-7c6a-4f27-95d2-7fb04a8aab1c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Bed_Charge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="405" y="0" width="50" height="30" uuid="46142ab9-7f02-4378-9e0f-cfef05705037">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fe7bfb5a-1151-4fe4-a769-01c4686c5b10"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Medicine_Charge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="0" width="50" height="30" uuid="26774eee-eab3-49e7-8d8d-3f1518527ac1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8c9697e7-8223-4b52-a7dc-8eecf60c1152"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Extra_Charges}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="505" y="0" width="50" height="30" uuid="0b92ede4-3271-4664-bf4f-71b3eb216c12">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e6257b33-b77c-4ce5-891e-afe99e867db8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

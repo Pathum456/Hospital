@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewWardFormController">
+   <children>
+      <AnchorPane fx:id="table_Load_Context" layoutX="82.0" layoutY="72.0" prefHeight="324.0" prefWidth="1030.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <TableView fx:id="ward_tbl" prefHeight="324.0" prefWidth="1030.0" style="-fx-border-color: gray;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="w_Id_col" prefWidth="259.66668701171875" text="W_Id" />
+                <TableColumn fx:id="w_Name_col" prefWidth="299.0" text="W_Name" />
+                  <TableColumn fx:id="w_D_col" prefWidth="310.0" text="W_Doctor In Charge" />
+                  <TableColumn fx:id="r_Qty_col" prefWidth="258.0" text="W_Room_Qty" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+      <Box depth="100" drawMode="LINE" height="200.0" layoutX="160.0" layoutY="172.0" width="280.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="750.0" AnchorPane.topAnchor="72.0" />
+      <Label alignment="CENTER" layoutX="85.0" layoutY="24.0" prefHeight="31.0" prefWidth="315.0" text="View Ward" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="w_cmb" layoutX="30.0" layoutY="79.0" prefHeight="27.0" prefWidth="259.0" promptText="Ward ID :" style="-fx-border-color: black;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="79.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="w_Name_Txt" editable="false" layoutX="30.0" layoutY="129.0" prefHeight="27.0" prefWidth="260.0" promptText="Ward Name :" style="-fx-border-color: black;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="860.0" AnchorPane.topAnchor="129.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="w_D_In_Charge_Txt" editable="false" layoutX="30.0" layoutY="179.0" prefHeight="25.0" prefWidth="260.0" promptText="Doctor In Charge" style="-fx-border-color: black;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="179.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="w_Room_Qty_Txt" editable="false" layoutX="30.0" layoutY="229.0" prefHeight="25.0" prefWidth="260.0" promptText="Room QTY :" style="-fx-border-color: black;" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="229.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <Box depth="100" drawMode="LINE" height="200.0" layoutX="520.0" layoutY="172.0" width="280.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="72.0" />
+      <JFXComboBox fx:id="r_cmb" layoutX="395.0" layoutY="82.0" prefHeight="27.0" prefWidth="252.0" promptText="Room ID :" style="-fx-border-color: black;" AnchorPane.topAnchor="82.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="w_Id_Txt" editable="false" layoutX="395.0" layoutY="149.0" prefHeight="25.0" prefWidth="253.0" promptText="Ward ID :" style="-fx-border-color: black;" AnchorPane.topAnchor="149.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="r_Charge_Txt" editable="false" layoutX="394.0" layoutY="219.0" prefHeight="25.0" prefWidth="254.0" promptText="Room Charge :" style="-fx-border-color: black;" AnchorPane.topAnchor="219.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <Box depth="100" drawMode="LINE" height="200.0" layoutX="890.0" layoutY="172.0" width="280.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="72.0" />
+      <JFXTextField fx:id="r_ID_Txt" editable="false" layoutX="758.0" layoutY="149.0" prefHeight="25.0" prefWidth="262.0" promptText="Room Id" style="-fx-border-color: black;" AnchorPane.rightAnchor="30.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+      <JFXComboBox fx:id="b_cmb" layoutX="759.0" layoutY="82.0" prefHeight="25.0" prefWidth="261.0" promptText="Bed ID :" style="-fx-border-color: black;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="82.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="b_Charges_Txt" editable="false" layoutX="758.0" layoutY="219.0" prefHeight="25.0" prefWidth="262.0" promptText="Bed Charges :" style="-fx-border-color: black;" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="219.0">
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </JFXTextField>
+
+      <JFXButton layoutX="42.0" layoutY="289.0" onAction="#view_Ward_Details_on_Action" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="View Ward Details" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="289.0" />
+      <JFXButton layoutX="403.0" layoutY="290.0" onAction="#view_Room_Details_On_Action" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="View Room Details " AnchorPane.leftAnchor="403.0" AnchorPane.topAnchor="289.0" />
+      <JFXButton layoutX="770.0" layoutY="288.0" onAction="#view_Bed_On_Action" prefHeight="36.0" prefWidth="117.0" style="-fx-background-color: #2563EB; -fx-border-color: black;" text="View Bed Details" AnchorPane.leftAnchor="770.0" AnchorPane.topAnchor="289.0" />
+   </children>
+</AnchorPane>

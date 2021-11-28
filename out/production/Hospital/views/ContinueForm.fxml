@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A3A3A3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContinueFormController">
+   <children>
+      <AnchorPane fx:id="admin_Context" layoutX="6.0" layoutY="61.0" prefHeight="329.0" prefWidth="280.0" style="-fx-background-color: #60A5FA;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="65.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="44.0">
+               <image>
+                  <Image url="@../essarts/admin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="219.0" text="Continue As Administrator">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="admin_Btn" alignment="BOTTOM_CENTER" onAction="#continue_As_Admin_On_Action" prefHeight="339.0" prefWidth="280.0" text="Tap here" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="reception_Context" layoutX="6.0" layoutY="61.0" prefHeight="329.0" prefWidth="280.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="72.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="135.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="39.0">
+               <image>
+                  <Image url="@../essarts/receptionist-silhouette-2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="44.0" layoutY="213.0" text="Continue As Reception">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="reception_Btn" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="247.0" onAction="#continue_As_Reception_On_Action" prefHeight="339.0" prefWidth="280.0" text="Tap here" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <Label alignment="CENTER" layoutX="276.0" layoutY="18.0" prefHeight="29.0" prefWidth="323.0" text="New_Life Hospital" underline="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
